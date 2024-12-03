@@ -41,5 +41,11 @@ db := appwrite.NewDatabases(client)
 // parse the database id, collection id, document id and action
 event := aw.ParseEvent(h)
 
+// the values from the event are stored in the following variables
+// event.DatabaseID
+// evente.CollectionID
+// event.DocumentID
+// event.Action - insert, select, update, delete
+
 ```
 
